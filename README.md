@@ -1,73 +1,154 @@
-# Welcome to your Lovable project
+🚀 QuickTask – Frontend Developer Assignment
 
-## Project info
+QuickTask is a full-stack web application built as part of a Frontend Developer Intern assignment.
+The project demonstrates frontend-backend integration, authentication, dashboard CRUD operations, and scalable architecture using modern web technologies.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+📌 Project Overview
 
-## How can I edit this code?
+Frontend: React (Vite) + TypeScript + Tailwind CSS
 
-There are several ways of editing your application.
+Backend: Node.js / Python (REST API)
 
-**Use Lovable**
+Authentication: JWT-based Register / Login / Logout
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+State & Data: React Query
 
-Changes made via Lovable will be committed automatically to this repo.
+UI: Responsive, clean, and user-friendly dashboard
 
-**Use your preferred IDE**
+✨ Features
+🔐 Authentication
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+User registration with hashed passwords
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Secure login & logout using JWT tokens
 
-Follow these steps:
+Token validation for protected routes
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+📊 Dashboard
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+CRUD operations on entities
 
-# Step 3: Install the necessary dependencies.
-npm i
+Protected dashboard access
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Real-time UI updates
+
+🎨 UI/UX
+
+Fully responsive design
+
+Clean and modern interface
+
+User-friendly navigation
+
+🛠️ Tech Stack
+Frontend
+
+React (Vite)
+
+TypeScript
+
+Tailwind CSS
+
+React Router
+
+React Query
+
+Backend
+
+REST API (Node.js / Python)
+
+JWT Authentication
+
+Password hashing
+
+Secure API routes
+
+📂 Project Structure
+QuickTask/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── hooks/
+│   │   └── App.tsx
+│
+├── backend/
+│   ├── routes/
+│   ├── controllers/
+│   ├── middleware/
+│   └── server.js
+│
+├── README.md
+└── package.json
+
+🚀 Getting Started
+1️⃣ Clone the repository
+git clone https://github.com/Mahesh-Panhale/QuickTask.git
+cd QuickTask
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Run frontend
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+4️⃣ Run backend
+npm run server
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🔑 API Documentation
 
-**Use GitHub Codespaces**
+Basic API endpoints include:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Method	Endpoint	Description
+POST	/api/auth/register	Register user
+POST	/api/auth/login	Login user
+GET	/api/dashboard	Fetch dashboard data
+POST	/api/entity	Create entity
+PUT	/api/entity/:id	Update entity
+DELETE	/api/entity/:id	Delete entity
 
-## What technologies are used for this project?
+Postman collection / API details can be found in the repository.
 
-This project is built with:
+🔒 Security Practices
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Passwords hashed before storage
 
-## How can I deploy this project?
+JWT token validation on protected routes
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Secure API access with middleware
 
-## Can I connect a custom domain to my Lovable project?
+🤖 Use of AI Tools
 
-Yes, you can!
+AI-assisted tools were used during development to:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Improve code quality
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Follow best practices
+
+Speed up development
+
+All logic, architecture decisions, and final implementations were fully reviewed, understood, and customized by me to ensure correctness, security, and maintainability.
+
+📈 Scalability Notes
+
+For production-level scaling:
+
+Separate frontend & backend deployments
+
+Use environment variables for configs
+
+Introduce role-based access control
+
+Add caching (Redis)
+
+Move to microservices if needed
+
+👤 Author
+
+Mahesh Panhale
+Frontend Developer
+🔗 GitHub: https://github.com/Mahesh-Panhale
+
+🔗 Portfolio: https://mahifreelancehub.in
